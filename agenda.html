@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda - Barbería Elegancia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Barbería Elegancia</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="agendar.html">Agendar Cita</a></li>
+                <li><a href="agenda.html">Agenda</a></li>
+                <li><a href="clientes.html">Clientes</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Agenda de Citas</h2>
+            <label for="filtro-fecha">Filtrar por fecha:</label>
+            <input type="date" id="filtro-fecha" />
+
+            <label for="filtro-barbero">Filtrar por barbero:</label>
+            <input type="text" id="filtro-barbero" placeholder="Nombre del barbero" />
+
+            <label for="buscar-citas">Buscar citas:</label>
+            <input type="text" id="buscar-citas" placeholder="Buscar por nombre, fecha o barbero" />
+            <table id="tabla-citas">
+                <thead>
+                    <tr>
+                        <th>Cliente</th>
+                        <th>Servicio</th>
+                        <th>Fecha</th>
+                        <th>Hora</th>
+                        <th>Barbero</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Barbería Elegancia. Todos los derechos reservados.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clientes Frecuentes - Barbería Elegancia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Barbería Elegancia</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="agendar.html">Agendar Cita</a></li>
+                <li><a href="agenda.html">Agenda</a></li>
+                <li><a href="clientes.html">Clientes</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Clientes Frecuentes</h2>
+            <form id="form-clientes">
+                <label for="nombre-cliente">Nombre:</label>
+                <input type="text" id="nombre-cliente" required>
+                <label for="telefono-cliente">Teléfono:</label>
+                <input type="tel" id="telefono-cliente" required>
+                <label for="email-cliente">Correo Electrónico:</label>
+                <input type="email" id="email-cliente" required>
+                <button type="submit">Agregar Cliente</button>
+            </form>
+            <label for="buscar-clientes">Buscar clientes:</label>
+            <input type="text" id="buscar-clientes" placeholder="Buscar por nombre, teléfono o email" />
+            <table id="tabla-clientes">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Teléfono</th>
+                        <th>Correo</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Barbería Elegancia. Todos los derechos reservados.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

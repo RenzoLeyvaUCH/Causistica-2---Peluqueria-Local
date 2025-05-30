@@ -1,0 +1,320 @@
+/* General Styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background-color: #222;
+  color: white;
+  padding: 15px 20px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 28px;
+  letter-spacing: 1.2px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 12px 0 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #1e90ff;
+  text-decoration: underline;
+}
+
+main {
+  padding: 25px 20px;
+  flex-grow: 1;
+  max-width: 960px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+h2 {
+  text-align: center;
+  color: #444;
+  margin-bottom: 25px;
+  font-weight: 700;
+}
+
+/* Form Styles */
+form {
+  max-width: 600px;
+  margin: 20px auto 40px;
+  padding: 25px;
+  border: 1px solid #ddd;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+form label {
+  display: block;
+  margin-top: 15px;
+  font-weight: 600;
+  color: #555;
+}
+
+form input,
+form select,
+form button {
+  width: 100%;
+  padding: 12px 15px;
+  margin-top: 6px;
+  border: 1.8px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+form input:focus,
+form select:focus {
+  outline: none;
+  border-color: #1e90ff;
+  box-shadow: 0 0 5px rgba(30, 144, 255, 0.5);
+}
+
+form button {
+  background-color: #1e90ff;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+  margin-top: 20px;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #0f6ddb;
+}
+
+/* Table Styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 25px;
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.07);
+}
+
+table th,
+table td {
+  padding: 14px 18px;
+  border-bottom: 1px solid #eee;
+  text-align: left;
+  vertical-align: middle;
+  font-size: 15px;
+}
+
+table th {
+  background-color: #f0f4f8;
+  font-weight: 700;
+  color: #333;
+  user-select: none;
+}
+
+table tbody tr:hover {
+  background-color: #f5faff;
+}
+
+/* Inline Editing Inputs */
+input.input-nombre,
+input.input-telefono,
+input.input-email {
+  width: 100%;
+  padding: 8px 10px;
+  font-size: 14px;
+  border: 1.6px solid #bbb;
+  border-radius: 5px;
+  box-sizing: border-box;
+  transition: border-color 0.25s ease;
+}
+
+input.input-nombre:focus,
+input.input-telefono:focus,
+input.input-email:focus {
+  border-color: #1e90ff;
+  box-shadow: 0 0 4px rgba(30, 144, 255, 0.5);
+  outline: none;
+}
+
+/* Action Buttons */
+button {
+  padding: 7px 15px;
+  font-size: 14px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button.btn-editar {
+  background-color: #f0ad4e; /* orange */
+  color: white;
+  font-weight: 600;
+}
+
+button.btn-editar:hover {
+  background-color: #ec971f;
+}
+
+button.btn-guardar {
+  background-color: #5cb85c; /* green */
+  color: white;
+  font-weight: 600;
+}
+
+button.btn-guardar:hover {
+  background-color: #4cae4c;
+}
+
+button.btn-cancelar {
+  background-color: #d9534f; /* red */
+  color: white;
+  font-weight: 600;
+  margin-left: 8px;
+}
+
+button.btn-cancelar:hover {
+  background-color: #c9302c;
+}
+
+button.btn-eliminar {
+  background-color: #d9534f; /* red */
+  color: white;
+  font-weight: 600;
+}
+
+button.btn-eliminar:hover {
+  background-color: #c9302c;
+}
+
+/* Search input */
+.buscar-clientes-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px; /* espacio entre el texto y el input */
+  margin-bottom: 20px;
+}
+
+.buscar-clientes-container label {
+  font-weight: bold;
+  font-size: 16px;
+  color: #444;
+}
+
+#buscar-clientes {
+  width: 250px; /* ancho fijo para el input */
+  padding: 8px 12px;
+  font-size: 15px;
+  border: 1.8px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+
+#buscar-clientes:focus {
+  outline: none;
+  border-color: #1e90ff;
+  box-shadow: 0 0 6px rgba(30, 144, 255, 0.6);
+}
+
+/* Footer */
+footer {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 14px 0;
+  width: 100%;
+  margin-top: 40px;
+  box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.3);
+}
+
+footer p {
+  margin: 0;
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  form, table {
+    width: 95%;
+    margin: 20px auto;
+  }
+
+  table th, table td {
+    font-size: 13px;
+    padding: 10px 8px;
+  }
+
+  button {
+    font-size: 13px;
+    padding: 6px 12px;
+  }
+}
+
+/* Estilo para los filtros y búsqueda de agenda */
+#filtro-fecha,
+#filtro-barbero,
+#buscar-citas {
+  max-width: 200px;
+  display: inline-block;
+  margin: 0 10px 20px 0;
+  padding: 10px 15px;
+  font-size: 15px;
+  border: 1.8px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+
+#filtro-fecha:focus,
+#filtro-barbero:focus,
+#buscar-citas:focus {
+  outline: none;
+  border-color: #1e90ff;
+  box-shadow: 0 0 6px rgba(30, 144, 255, 0.6);
+}
+
+/* Contenedor para filtros */
+.filtros-agenda {
+  text-align: center;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar Cita - Barbería Elegancia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Barbería Elegancia</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="agendar.html">Agendar Cita</a></li>
+                <li><a href="agenda.html">Agenda</a></li>
+                <li><a href="clientes.html">Clientes</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Editar Cita</h2>
+            <form id="formEditar">
+                <input type="hidden" id="editId">
+                
+                <label for="editNombre">Nombre del Cliente:</label>
+                <input type="text" id="editNombre" name="editNombre" required>
+                
+                <label for="editServicio">Servicio:</label>
+                <select id="editServicio" name="editServicio" required>
+                    <option value="">Selecciona un servicio</option>
+                    <option value="Corte">Corte</option>
+                    <option value="Peinado">Peinado</option>
+                    <option value="Tinturado">Tinturado</option>
+                </select>
+                
+                <label for="editFecha">Fecha:</label>
+                <input type="date" id="editFecha" name="editFecha" required>
+                
+                <label for="editHora">Hora:</label>
+                <input type="time" id="editHora" name="editHora" required>
+                
+                <label for="editBarbero">Barbero:</label>
+                <select id="editBarbero" name="editBarbero" required>
+                    <option value="">Selecciona un barbero</option>
+                    <option value="Juan">Juan</option>
+                    <option value="Pedro">Pedro</option>
+                    <option value="Luis">Luis</option>
+                </select>
+                
+                <button type="submit">Guardar Cambios</button>
+                <button type="button" id="cancelarEditar" onclick="window.location.href='agenda.html'">Cancelar</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Barbería Elegancia. Todos los derechos reservados.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

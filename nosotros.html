@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nosotros - Barbería Elegancia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Barbería Elegancia</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="agendar.html">Agendar Cita</a></li>
+                <li><a href="agenda.html">Agenda</a></li>
+                <li><a href="clientes.html">Clientes</a></li>
+                <li><a href="nosotros.html" class="active">Nosotros</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Conócenos</h2>
+            <p>
+                Barbería Elegancia es un negocio local con más de 10 años de experiencia, dedicado a ofrecer los mejores servicios de peluquería y barbería en el distrito. 
+                Nuestro objetivo es brindar una experiencia única, donde cada cliente se sienta valorado y cuidado.
+            </p>
+            <p>
+                Contamos con un equipo de profesionales altamente capacitados que siempre están a la vanguardia de las últimas tendencias en cortes, peinados y tintes. 
+                Tu satisfacción es nuestra prioridad.
+            </p>
+        </section>
+
+        <section>
+            <h2>Conoce a Nuestro Equipo</h2>
+            <div class="team">
+                <div class="team-member">
+                    <img src="img/barbero1.jpg" alt="Juan" class="team-photo">
+                    <h3>Juan Pérez</h3>
+                    <p>Especialista en cortes modernos y clásicos.</p>
+                </div>
+                <div class="team-member">
+                    <img src="img/barbero2.jpg" alt="Pedro" class="team-photo">
+                    <h3>Pedro García</h3>
+                    <p>Experto en tintes y tratamientos capilares.</p>
+                </div>
+                <div class="team-member">
+                    <img src="img/barbero3.jpg" alt="Luis" class="team-photo">
+                    <h3>Luis Torres</h3>
+                    <p>Maestro barbero con técnicas tradicionales.</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Nuestras Instalaciones</h2>
+            <div class="gallery">
+                <img src="img/barberia1.jpg" alt="Local 1" class="gallery-photo">
+                <img src="img/barberia2.jpg" alt="Local 2" class="gallery-photo">
+                <img src="img/barberia3.jpg" alt="Local 3" class="gallery-photo">
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Barbería Elegancia. Todos los derechos reservados.</p>
+    </footer>
+    <style>
+        .team {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+
+        .team-member {
+            text-align: center;
+            width: 30%;
+        }
+
+        .team-photo {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+
+        .gallery {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .gallery-photo {
+            width: 30%;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</body>
+</html>
